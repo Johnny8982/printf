@@ -1,2 +1,2 @@
-# printf\nA repo created to collaboration on git 
+# printf repo created to collaboration on git
 Collaborator: Peace Eromonsele
