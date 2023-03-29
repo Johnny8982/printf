@@ -11,13 +11,13 @@
  * @size: Size specifier
  * Return: Number of chars printed.
  */
-int print_unsigned(va_list types, char buffer[],
+int print_unsgnd(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
 	unsigned long int num = va_arg(types, unsigned long int);
 
-	num = convert_size_unsigned(num, size);
+	num = convert_size_unsgnd(num, size);
 
 	if (num == 0)
 		buffer[i--] = '0';
