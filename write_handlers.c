@@ -82,8 +82,7 @@ length, padd, extra_ch));
 * @extra_c: Extra char
 * Return: Number of printed chars.
 */
-int write_num(int ind, char buff[],
-int flg, int width, int prec,
+int write_num(int ind, char buff[], int flg, int width, int prec,
 int length, char padd, char extra_c)
 {
 int i, padd_start = 1;
@@ -139,8 +138,7 @@ return (write(1, &buff[ind], length));
 * @sz: Size specifier
 * Return: Number of written chars.
 */
-int write_unsgnd(int is_negative, int ind,
-char buff[],
+int write_unsgnd(int is_negative, int ind, char buff[],
 int flg, int width, int precis, int sz)
 {
 /* The number is stored at the bufer's right and starts at position i */
